@@ -6,7 +6,8 @@ router.get('/', (req, res) => {
   // res.send('Hey! It works!');
 
   const adam = { name: 'Adam', age: 100, cool: true };
-  res.json(adam);
+  // res.json(adam);
+  res.json(req.query);
 });
 
 module.exports = router;
